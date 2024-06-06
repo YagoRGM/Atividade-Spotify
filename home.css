@@ -16,7 +16,7 @@ body {
 }
 
 .sidebar {
-    width: 20%;
+    width: 23%;
     background-color: #000;
     padding: 20px;
     display: flex;
@@ -41,16 +41,16 @@ body {
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
     color: #b3b3b3;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.sidebar ul li :hover {
-    color: #1db954;
+.sidebar-section ul li:hover {
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .main-content {
@@ -76,7 +76,18 @@ nav .right {
     list-style: none;
     gap: 10px;
 }
+.nav-buttons p {
+    color: #b3b3b3;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
+.nav-buttons p:hover {
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .nav-item {
     margin-right: 10px;
 }
@@ -92,7 +103,8 @@ nav .right {
 }
 
 .nav-button {
-    background-color: #1db954;
+    background-color: #b91d1d;
+    font-weight: bold;
     border: none;
     background-color: white;
     padding: 10px 20px;
@@ -104,11 +116,13 @@ nav .right {
     margin-right: 30px;
 }
 
-.nav-button{
-    
+.nav-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
+
 .parte1{
-    width: 230px;
+    width: 280px;
     font-size: 18px;
     background-color: #242424;
     margin-bottom: 20px;
@@ -116,19 +130,38 @@ nav .right {
     border-radius: 8px;
 }
 .parte1 button {
-    width: 150px;
-    height: 40px;
+    width: 130px;
+    height: 35px;
     border-radius: 30px;
     font-weight: bold;
+    margin-top: 15px;
+    transition: transform 50ms ease-in-out;
+}
+.parte1 button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.parte1 h3 {
+    font-size: 16px;
 }
 .parte1 p {
-    margin-top: 5px;
+    margin-top: 15px;
+    font-size: 14px;
 }
-.nav-button:hover {
-    background-color: #1ed760;
+
+#logo {
+    width: 100px;
+}
+i {
+    width: 30px;
+    margin-left: 13px;
 }
 footer {
     font-size: 10px;
+}
+footer ul li{
+    font-size: 12px!important;
 }
 .now-playing {
     display: flex;
@@ -158,5 +191,5 @@ footer {
 }
 
 .playlist ul li:hover {
-    color: #1db954;
+    color: #b91d1d;
 }
