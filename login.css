@@ -201,3 +201,7 @@ input:checked + .slider::before {
 .footer a:hover {
     text-decoration: underline;
 }
+::placeholder{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+}
