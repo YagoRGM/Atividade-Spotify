@@ -26,6 +26,10 @@ body {
 
 .sidebar-section {
     margin-bottom: 10px;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 20px;
+
 }
 
 .sidebar h2 {
@@ -60,11 +64,17 @@ body {
     display: flex;
     justify-content: flex-end;
     height: 70px;
+    align-items: center;
 }
 
+nav .right {
+    display: flex;
+    gap: 10px;
+}
 .nav-buttons {
     display: flex;
     list-style: none;
+    gap: 10px;
 }
 
 .nav-item {
@@ -98,17 +108,28 @@ body {
     
 }
 .parte1{
+    width: 230px;
     font-size: 18px;
+    background-color: #242424;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
 }
 .parte1 button {
-    width: 200px;
+    width: 150px;
     height: 40px;
     border-radius: 30px;
+    font-weight: bold;
+}
+.parte1 p {
+    margin-top: 5px;
 }
 .nav-button:hover {
     background-color: #1ed760;
 }
-
+footer {
+    font-size: 10px;
+}
 .now-playing {
     display: flex;
     justify-content: space-between;
