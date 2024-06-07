@@ -187,8 +187,20 @@ footer ul li{
     margin-top: 10px;
 }
 .imagem {
-    width: 210px;
+    width: 180px;
     border-radius: 50%;
+}
+.album {
+}
+#albuns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.musica {
+    width: 180px;
+    border-radius: 5px;
 }
 .song-info {
     display: flex;
