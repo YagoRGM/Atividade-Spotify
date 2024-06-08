@@ -5,18 +5,23 @@
 }
 
 body {
-    font-family: 'Gothan', sans-serif;
+    font-family: 'Gotham', sans-serif;
     background-color: #181818;
     color: #fff;
+}
+iframe{
+    border: none;
+    border: none; 
+    margin-top: -8px; 
+    display: block; 
 }
 
 .container {
     display: flex;
     height: 100vh;
 }
-
 .sidebar {
-    width: 23%;
+    width: 39%;
     background-color: #000;
     padding: 20px;
     display: flex;
@@ -28,12 +33,7 @@ body {
     margin-bottom: 10px;
     background-color: #121212;
     border-radius: 8px;
-    padding: 20px;
-
-}
-
-.sidebar h2 {
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .sidebar ul {
@@ -42,10 +42,21 @@ body {
 
 .sidebar ul li {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 17px; 
     color: #b3b3b3;
     text-decoration: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
 }
 
 .sidebar-section ul li:hover {
@@ -54,33 +65,55 @@ body {
 }
 
 .main-content {
-    width: 80%;
+    width: 77%;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .top-nav {
-    background-color: #1D240F;
+    background: linear-gradient(180deg, #1D240F 0%, #37441D 100%);
     padding: 10px;
-    margin-bottom: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; 
     height: 70px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#setas {
+    display: flex;
     align-items: center;
 }
 
-nav .right {
-    display: flex;
-    gap: 10px;
+#setas img {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
 }
+
+#setas img:hover {
+    transform: scale(1.1);
+}
+#rotateimg{
+    rotate: 180deg;
+}
+
 .nav-buttons {
     display: flex;
-    list-style: none;
+    align-items: center;
     gap: 10px;
 }
+
 .nav-buttons p {
     color: #b3b3b3;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-right: 10px;
+    font-size: 16px;
 }
 
 .nav-buttons p:hover {
@@ -88,47 +121,29 @@ nav .right {
     transform: scale(1.05);
     cursor: pointer;
 }
-.nav-item {
-    margin-right: 10px;
-}
-
-.nav-link {
-    color: #b3b3b3;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.nav-link:hover {
-    color: #fff;
-}
 
 .nav-button {
-    background-color: #b91d1d;
+    background-color: white;
     font-weight: bold;
     border: none;
-    background-color: white;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    width: 100px;
-    height: 40px;
     border-radius: 30px;
-    margin-right: 30px;
 }
 
 .nav-button:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
-
-.parte1{
-    width: 280px;
+.parte1 {
     font-size: 18px;
     background-color: #242424;
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 8px;
 }
+
 .parte1 button {
     width: 130px;
     height: 35px;
@@ -137,6 +152,7 @@ nav .right {
     margin-top: 15px;
     transition: transform 50ms ease-in-out;
 }
+
 .parte1 button:hover {
     transform: scale(1.05);
     cursor: pointer;
@@ -145,77 +161,8 @@ nav .right {
 .parte1 h3 {
     font-size: 16px;
 }
+
 .parte1 p {
     margin-top: 15px;
     font-size: 14px;
-}
-
-#logo {
-    width: 100px;
-}
-i {
-    width: 30px;
-    margin-left: 13px;
-}
-footer {
-    font-size: 10px;
-}
-footer ul li{
-    font-size: 12px!important;
-}
-.now-playing {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.song-info {
-    display: flex;
-    align-items: center;
-}
-
-
-.song-info h3 {
-    margin-bottom: 5px;
-}
-
-
-.playlist ul {
-    list-style: none;
-}
-
-.playlist ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #282828;
-}
-
-.playlist ul li:hover {
-    color: #b91d1d;
-}
-#capa {
-    background-color: #37441D;
-    padding-bottom: 79px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start;
-    text-align: left; 
-    padding: 20px; 
-    font-size: 30px;
-}
-
-#capa img {
-    width: 200px;
-    height: 200px;
-    border-radius: 2px;
-    margin-right: 20px; 
-}
-#capa p{
-    margin-bottom: 60px;
-    font-size: 15px;
-}
-#capa h1{
-    margin-bottom: -40px;
-    margin-left: -40px;
 }

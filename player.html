@@ -6,10 +6,9 @@
     <title>Spotify – Web player: música para todas as pessoas</title>
     <link rel="stylesheet" href="player.css">
     <link rel="icon" sizes="32x32" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
-
+    <script src="https://kit.fontawesome.com/d613850138.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="https://kit.fontawesome.com/d613850138.js" crossorigin="anonymous"></script>
     <div class="container">
         <div class="sidebar">
             <div class="sidebar-section">
@@ -21,15 +20,15 @@
             </div>
             <div class="sidebar-section">
                 <ul>
-                    <li><i class="fa-solid fa-book"></i>Sua Biblioteca</li>
+                    <li><i class="fa-solid fa-book"></i>&nbsp;Sua Biblioteca</li>
                 </ul>
                 <div class="parte1">
                     <h3>Crie sua primeira playlist</h3>
-                    <p>É facil, vamos te ajudar</p>
+                    <p>É fácil, vamos te ajudar</p>
                     <button>Criar playlist</button>
                 </div>
                 <div class="parte1">
-                    <h3> Que tal seguir um podcast novo?</h3>
+                    <h3>Que tal seguir um podcast novo?</h3>
                     <p>Avisaremos você sobre novos episódios</p>
                     <button>Explore podcasts</button>
                 </div>
@@ -45,13 +44,16 @@
         </div>
         <div class="main-content">
             <nav class="top-nav">
+                <div id="setas">
+                    <img src="img/SETA.png" alt=""> 
+                    <img id="rotateimg" src="img/SETA.png" alt="">
+                </div>
                 <div class="nav-buttons">
                     <p>Inscrever-se</p>
                     <button class="nav-button">Entrar</button>
                 </div>
             </nav>
-           <div id="capa">
-            <iframe style="border-radius: 30px" src="https://open.spotify.com/embed/album/5DgYAKr0iKOHjwEf9nKMs4?utm_source=generator" width="100%" height="500px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe  src="https://open.spotify.com/embed/album/5DgYAKr0iKOHjwEf9nKMs4?utm_source=generator" width="100%" height="500px" frameborder="1" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
 </body>
