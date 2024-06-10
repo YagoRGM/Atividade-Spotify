@@ -84,7 +84,19 @@ iframe{
 }
 #biblio{
     margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 17px; 
+    color: #b3b3b3;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
+#biblio:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
 #discografia{
     color: gray;
     text-decoration: none;
@@ -111,6 +123,31 @@ iframe{
     transition: opacity 0.3s ease; 
     opacity: 0; 
 }
+#albuns{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 14px;
+}
+.album::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 165, 165, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1; 
+    border-radius: 5px;
+}
+.album img {
+    display: block;
+    max-width: 100%;
+}
+.album:hover::before {
+    opacity: 1;
+}
 
 
 .play-button i {
@@ -129,7 +166,7 @@ iframe{
     margin-left: 460px;
 }
 .top-nav {
-    background: linear-gradient(180deg, #1D240F 0%, #37441D 100%);
+    background: linear-gradient(180deg, #0d0f36 0%, #0d122c 100%);
     padding: 10px;
     display: flex;
     justify-content: space-between; 
@@ -139,12 +176,12 @@ iframe{
     border-top-right-radius: 10px;
 }
 
-#setas {
+.setas {
     display: flex;
     align-items: center;
+    position: relative;
 }
-
-#setas img {
+.setas img {
     height: 30px;
     width: 30px;
     margin-right: 15px;
@@ -152,8 +189,11 @@ iframe{
     filter: invert(1);
 }
 
-#setas img:hover {
+.setas img:hover {
     transform: scale(1.1);
+}
+#seta2{
+    margin-right: 500px;
 }
 #rotateimg{
     rotate: 180deg;
@@ -259,37 +299,13 @@ iframe{
     margin-top: 20px;
     border-radius: 30px;
     width: 100%;
-    height: 690px;
-    padding-bottom: 20px;
+    height: 680px;
+    padding-bottom: 30px;
 }
 .album {
     padding: 5px;
     position: relative;
     display: inline-block;
-}
-#albuns{
-    display: flex;
-    margin-top: 5px;
-    margin-left: 14px;
-}
-.album::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(165, 165, 165, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1; 
-}
-.album img {
-    display: block;
-    max-width: 100%;
-}
-.album:hover::before {
-    opacity: 1;
 }
 #discografia{
     margin-left: 700px;
@@ -361,4 +377,47 @@ margin-left: 60px;
 color: gray;
 font-size: 15px;
 margin-left: 60px;
+}
+.nav-buttons a{
+    text-decoration: none;
+}
+.nav-buttons p{
+   margin-right: 30px;
+   font-weight: 500;
+}
+#plusicon{
+   filter: invert(100%);
+   width: 15px;
+   height: 15px;
+   margin-left: 200px;
+   margin-bottom: 5px;
+}
+.texto {
+    visibility: hidden;
+    background-color: rgba(59, 58, 58, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 35px; 
+    left: 45%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.setas:hover .texto {
+    visibility: visible;
+    opacity: 1;
+}
+#biblio:hover .texto{
+    visibility: visible;
+    opacity: 1;
+}
+#bibliotext{
+    margin-top: 150px;
+    margin-left: -100px;
+    padding: 3px 8px
 }
