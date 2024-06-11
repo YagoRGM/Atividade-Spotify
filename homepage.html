@@ -7,7 +7,8 @@
     <title>Spotify – Web player: música para todas as pessoas</title>
     <link rel="stylesheet" href="home.css">
     <link rel="icon" sizes="32x32" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
-
+    <script src="https://kit.fontawesome.com/d613850138.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <script src="https://kit.fontawesome.com/d613850138.js" crossorigin="anonymous"></script>
@@ -21,7 +22,7 @@
                 </ul>
             </div>
             <div class="sidebar-section">
-                <ul>
+                <ul id="bibi">
                     <li><i class="fa-solid fa-book"></i>Sua Biblioteca</li>
                 </ul>
                 <div class="parte1">
@@ -34,7 +35,6 @@
                     <p>Avisaremos você sobre novos episódios</p>
                     <button>Explore podcasts</button>
                 </div>
-            </div>
             <footer>
                 <ul>
                     <li>Legal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Segurança e Centro de privacidade</li>
@@ -42,73 +42,112 @@
                     <li>Sobre anúncios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acessibilidade</li>
                     <li>Cookies</li>
                 </ul>
+                <div id="botaoportugues">
+                    <button><img src="img/globo1.png" alt="">Português do Brasil</button>
+                </div>
             </footer>
+            </div>
         </div>
         <div class="main-content">
             <nav class="top-nav">
+                <div class="setas">
+                    <img src="img/setateste.png" alt="Voltar"> 
+                </div>
+                <div class="setas" id="seta2">
+                    <img id="rotateimg" src="img/setateste.png" alt="Avançar">
+                </div>
                 <div class="nav-buttons">
-                    <p>Inscrever-se</p>
-                    <button class="nav-button">Entrar</button>
+                   <a href="login.html"> <p>Inscrever-se</p></a>
+                   <a href="login.html"> <button class="nav-button">Entrar</button> </a>
                 </div>
             </nav>
-            <div class="menu" id="artistas">
-                <h2>Artistas populares </h2>
+            <div class="menu" >
+                <div class="linha">
+                    <h2>Artistas populares </h2>
+                    <h4>Mostrar tudo</h4>
+                </div>
+
                 <div id="artistas">
 
                     <div class="artista">
                         <img src="img/zeneto.jpg" class="imagem" alt="">
+                        <button class="play-button"><i class="fas fa-play"></i></button>
                         <h3>Zé Neto e Cristiano</h3>
                         <p>Artista</p>
                     </div>
                     <div class="artista">
                         <img src="img/henrique-e-juliano.jfif" class="imagem">
+                        <button class="play-button"><i class="fas fa-play"></i></button>
                         <h3>Henrique e Juliano</h3>
                         <p>Artista</p>
                     </div>
                     <div class="artista">
                         <img src="img/jorge e mateus.jpg" class="imagem">
+                        <button class="play-button"><i class="fas fa-play"></i></button>
                         <h3>Jorge e Mateus</h3>
-                        <p>Artista</p>
-                    </div>
-                    <div class="artista">
-                        <img src="img/luan.jfif" class="imagem">
-                        <h3>Luan Pereira</h3>
                         <p>Artista</p>
                     </div>
                     <div class="artista">
                         <img src="img/mateusekauan.jfif" class="imagem">
-                        <h3>Jorge e Mateus</h3>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                        <h3>Mateus e Kauan</h3>
+                        <p>Artista</p>
+                    </div>
+                    <div class="artista">
+                        <img src="img/luan.jfif" class="imagem">
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                        <h3>Luan Pereira</h3>
+                        <p>Artista</p>
+                    </div>
+                    <div class="artista">
+                        <img src="img/anacastela.jpg" class="imagem">
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                        <h3>Ana Castela</h3>
                         <p>Artista</p>
                     </div>
                 </div>
-                <div class="menu" id>
-                    <h2>Artistas populares </h2>
+                <div id="menu">
+                    <div class="linha">
+                        <h2>Artistas populares </h2>
+                        <h4>Mostrar tudo</h4>
+                    </div>
                     <div id="albuns">
     
-                        <div class="artista">
+                        <div class="album">
                             <img src="img/lovehotel.jpg" class="musica" alt="">
-                            <h3>Zé Neto e Cristiano</h3>
-                            <p>Artista</p>
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                            <h3>love hotel</h3>
+                            <p>leftovermax</p>
                         </div>
                         <div class="album">
                             <img src="img/hitmehardandsoft.jpg" class="musica">
-                            <h3>Henrique e Juliano</h3>
-                            <p>Artista</p>
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                            <h3>HIT ME HARD AND...</h3>
+                            <p>Billie Elish</p>
                         </div>
                         <div class="album">
                             <img src="img/whitenoise.jpg" class="musica">
-                            <h3>Jorge e Mateus</h3>
-                            <p>Artista</p>
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                            <h3>White noise Sleep...</h3>
+                            <p>Sleepy Jhon</p>
                         </div>
                         <div class="album">
                             <img src="img/digitando.jpg" class="musica">
-                            <h3>Luan Pereira</h3>
-                            <p>Artista</p>
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                            <h3>Digitando</h3>
+                            <p>Gustavo Moura e Rafael</p>
                         </div>
                         <div class="album">
-                            <img src="img/mateusekauan.jfif" class="musica">
-                            <h3>Jorge e Mateus</h3>
-                            <p>Artista</p>
+                            <img src="img/taylor.jpg" class="musica">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                            <h3>THE TORTURED ...</h3>
+                            <p>Taylor Swift</p>
+                        </div>
+                        <div class="album">
+                            <img src="img/eminem.jpg" class="musica">
+                            <button class="play-button"><i class="fas fa-play"></i></button>
+                            <h3>Encore(Deluxe Version)</h3>
+                            <p>Eminem</p>
                         </div>
                     </div>
 
