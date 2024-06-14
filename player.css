@@ -51,8 +51,10 @@ iframe{
     margin-bottom: 10px;
     background-color: #121212;
     border-radius: 8px;
-    padding: 9px;
-    
+    padding: 9px; 
+}
+.sidebar-section a{
+    text-decoration: none;
 }
 
 .sidebar ul {

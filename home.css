@@ -15,8 +15,9 @@ body {
 }
 .container {
     display: flex;
-    height: 207vh;
+    height: 214vh;
     background-image: linear-gradient(rgb(42, 42, 42), black);
+    border-bottom: 2px solid black;
 }
 
 
@@ -42,8 +43,9 @@ body {
     border-radius: 8px;
     padding: 10px;
     position: sticky;
-
-
+}
+.sidebar-section a{
+    text-decoration: none;
 }
 
 .sidebar h2 {
@@ -160,8 +162,6 @@ nav .right {
     transform: scale(1.1);
     cursor: pointer;
 }
-#seta2{
-}
 #rotateimg{
     rotate: 180deg;
 }
@@ -238,11 +238,6 @@ footer ul li{
 #bibi {
     margin-top: 8px;
 }
-#mais {
-
-}
-
-
 .menu {
     padding: 5px;
     margin-left: 5px;
@@ -463,7 +458,8 @@ cursor: pointer;
     border-bottom: none;
     margin: 30px 0;
     width: 700px;
-    margin-left: 60px;
+    margin-left: 90px;
+    margin-top: 45px;
     }
     
 .sidebar::-webkit-scrollbar {
@@ -476,4 +472,7 @@ cursor: pointer;
 }
 .sidebar::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.7); 
+}
+#fontefinal{
+    margin-left: 80px;
 }
